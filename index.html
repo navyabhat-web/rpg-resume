@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navya's Odyssey | Interactive Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div id="game-wrapper">
+      <div id="hud">
+        <span id="title">Navya's Odyssey</span>
+        <span id="score">Skills: 0/5</span>
+      </div>
+
+      <div id="game-container">
+        <canvas id="game-canvas" width="640" height="480"></canvas>
+        
+        <!-- Dialogue Box Overlay -->
+        <div id="dialogue-box" class="hidden">
+          <h3 id="dialogue-name">Name</h3>
+          <div id="dialogue-text">Dialogue goes here...</div>
+          <span class="hint">Press [Space] to continue</span>
+        </div>
+
+        <!-- Instructions Overlay -->
+        <div id="instructions">
+          <h3>Navya's Odyssey</h3>
+          <p>Explore my experience, education, and skills.</p>
+          <div class="controls-info">
+            <p>🎮 <strong>Movement:</strong> W, A, S, D or Arrows</p>
+            <p>💬 <strong>Interact:</strong> Spacebar</p>
+          </div>
+          <button id="start-btn">Begin Journey</button>
+        </div>
+      </div>
+      
+      <!-- Mobile Controls (Visible only on small screens) -->
+      <div id="mobile-controls">
+        <div class="d-pad">
+          <button id="btn-up">▲</button>
+          <div class="d-pad-row">
+            <button id="btn-left">◀</button>
+            <button id="btn-down">▼</button>
+            <button id="btn-right">▶</button>
+          </div>
+        </div>
+        <button id="btn-action">Action [Space]</button>
+      </div>
+    </div>
+    
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
